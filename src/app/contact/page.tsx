@@ -32,8 +32,7 @@ export default function ContactPage() {
               href="mailto:vishal@example.com"
               className="flex items-center justify-between p-6 group transition-colors duration-150"
               style={{ background: 'var(--bg)' }}
-              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = 'var(--bg-card)' }}
-              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = 'var(--bg)' }}
+              
             >
               <div>
                 <p className="label mb-1.5">Email</p>
@@ -58,8 +57,7 @@ export default function ContactPage() {
               rel="noopener noreferrer"
               className="flex items-center justify-between p-6 group transition-colors duration-150"
               style={{ background: 'var(--bg)' }}
-              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = 'var(--bg-card)' }}
-              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = 'var(--bg)' }}
+              
             >
               <div>
                 <p className="label mb-1.5">LinkedIn</p>

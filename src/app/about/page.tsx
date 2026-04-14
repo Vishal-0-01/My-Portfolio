@@ -137,14 +137,7 @@ export default function AboutPage() {
                 href="/case-studies"
                 className="flex items-center justify-between p-4 border transition-colors duration-150"
                 style={{ borderColor: 'var(--border)', color: 'var(--ink-muted)' }}
-                onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLElement).style.borderColor = 'var(--accent)'
-                  ;(e.currentTarget as HTMLElement).style.color = 'var(--accent)'
-                }}
-                onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLElement).style.borderColor = 'var(--border)'
-                  ;(e.currentTarget as HTMLElement).style.color = 'var(--ink-muted)'
-                }}
+                
               >
                 <span className="text-sm">View Case Studies</span>
                 <span>→</span>
@@ -153,14 +146,7 @@ export default function AboutPage() {
                 href="/contact"
                 className="flex items-center justify-between p-4 border transition-colors duration-150"
                 style={{ borderColor: 'var(--border)', color: 'var(--ink-muted)' }}
-                onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLElement).style.borderColor = 'var(--accent)'
-                  ;(e.currentTarget as HTMLElement).style.color = 'var(--accent)'
-                }}
-                onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLElement).style.borderColor = 'var(--border)'
-                  ;(e.currentTarget as HTMLElement).style.color = 'var(--ink-muted)'
-                }}
+                
               >
                 <span className="text-sm">Get in Touch</span>
                 <span>→</span>

@@ -26,8 +26,7 @@ export function ThemeToggle() {
       aria-label="Toggle theme"
       className="w-8 h-8 flex items-center justify-center rounded-sm transition-colors duration-150"
       style={{ color: 'var(--ink-faint)' }}
-      onMouseEnter={e => (e.currentTarget.style.color = 'var(--ink)')}
-      onMouseLeave={e => (e.currentTarget.style.color = 'var(--ink-faint)')}
+      
     >
       {dark ? (
         // Sun icon

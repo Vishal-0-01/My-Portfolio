@@ -106,8 +106,7 @@ export default async function CaseStudyPage({ params }: Props) {
                 href={`#${s.key}`}
                 className="text-sm flex items-center gap-1.5 transition-colors duration-150"
                 style={{ color: 'var(--ink-muted)' }}
-                onMouseEnter={(e) => { e.currentTarget.style.color = 'var(--accent)' }}
-                onMouseLeave={(e) => { e.currentTarget.style.color = 'var(--ink-muted)' }}
+                
               >
                 <span className="text-xs font-mono" style={{ color: 'var(--ink-faint)' }}>{s.num}</span>
                 {s.label}
@@ -127,8 +126,7 @@ export default async function CaseStudyPage({ params }: Props) {
                   href={`#${s.key}`}
                   className="flex items-center gap-2.5 text-xs py-1.5 transition-colors duration-150"
                   style={{ color: 'var(--ink-faint)' }}
-                  onMouseEnter={(e) => { e.currentTarget.style.color = 'var(--accent)' }}
-                  onMouseLeave={(e) => { e.currentTarget.style.color = 'var(--ink-faint)' }}
+                  
                 >
                   <span className="font-mono">{s.num}</span>
                   {s.label}
