@@ -51,7 +51,7 @@ export default async function HomePage() {
       >
         <div className="max-w-6xl mx-auto px-6 py-24 md:py-32">
           {/* Kicker */}
-          <div className="flex items-center gap-3 mb-10 animate-fade-up animate-fill-both" style={{ animationDelay: '0ms' }}>
+          <div className="flex items-center gap-3 mb-10 animate-fade-up animate-fill-both">
             <span className="accent-bar" />
             <span className="label">Business Analysis · Investment Thinking</span>
           </div>
@@ -59,7 +59,6 @@ export default async function HomePage() {
           {/* Headline */}
           <h1
             className="display-xl mb-8 max-w-4xl animate-fade-up animate-fill-both"
-            style={{ animationDelay: '100ms' }}
           >
             I break down business problems{' '}
             <span
@@ -75,17 +74,14 @@ export default async function HomePage() {
           {/* Sub */}
           <p
             className="text-lg max-w-xl mb-12 animate-fade-up animate-fill-both"
-            style={{ color: 'var(--ink-muted)', animationDelay: '200ms', lineHeight: '1.6' }}
+            style={{ color: 'var(--ink-muted)', lineHeight: '1.6' }}
           >
             MBAFT candidate at FMS Delhi. I build models, write structured analysis,
             and think hard about capital allocation.
           </p>
 
           {/* CTAs */}
-          <div
-            className="flex flex-wrap gap-4 animate-fade-up animate-fill-both"
-            style={{ animationDelay: '300ms' }}
-          >
+          <div className="flex flex-wrap gap-4 animate-fade-up animate-fill-both">
             <Link
               href="/case-studies"
               className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold tracking-wide transition-opacity duration-150 hover:opacity-90"
@@ -96,26 +92,23 @@ export default async function HomePage() {
                 <path d="M5 12h14M12 5l7 7-7 7"/>
               </svg>
             </Link>
+
             <Link
               href="/tools"
-              className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold tracking-wide border transition-colors duration-150"
+              className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold tracking-wide border transition-colors duration-150 hover:bg-[var(--bg-card)]"
               style={{
                 borderColor: 'var(--border)',
                 color: 'var(--ink-muted)',
                 letterSpacing: '0.03em',
                 background: 'transparent',
               }}
-              onMouseEnter={undefined}
             >
               Explore Tools
             </Link>
           </div>
 
           {/* Scroll indicator */}
-          <div
-            className="mt-24 flex items-center gap-3 animate-fade-up animate-fill-both"
-            style={{ animationDelay: '500ms' }}
-          >
+          <div className="mt-24 flex items-center gap-3 animate-fade-up animate-fill-both">
             <div
               className="w-px h-10"
               style={{ background: 'linear-gradient(to bottom, var(--accent), transparent)' }}
@@ -169,10 +162,8 @@ export default async function HomePage() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="group p-8 flex flex-col gap-4 transition-colors duration-150"
+                className="group p-8 flex flex-col gap-4 transition-colors duration-150 hover:bg-[var(--bg-card)]"
                 style={{ background: 'var(--bg)' }}
-                onMouseEnter={(e) => { e.currentTarget.style.background = 'var(--bg-card)' }}
-                onMouseLeave={(e) => { e.currentTarget.style.background = 'var(--bg)' }}
               >
                 <div className="flex items-start justify-between">
                   <span className="label" style={{ color: 'var(--accent)' }}>{item.num}</span>
@@ -185,9 +176,10 @@ export default async function HomePage() {
                     <path d="M7 17L17 7M7 7h10v10"/>
                   </svg>
                 </div>
+
                 <div>
                   <h3
-                    className="text-lg font-semibold mb-2 transition-colors duration-150"
+                    className="text-lg font-semibold mb-2"
                     style={{ fontFamily: 'var(--font-display)', color: 'var(--ink)' }}
                   >
                     {item.label}
