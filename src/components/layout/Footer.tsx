@@ -16,6 +16,7 @@ export function Footer() {
       style={{ borderColor: 'var(--border)', background: 'var(--bg)' }}
     >
       <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-10">
+        
         {/* Brand */}
         <div>
           <div className="flex items-center gap-2.5 mb-3">
@@ -38,10 +39,7 @@ export function Footer() {
               <Link
                 key={l.href}
                 href={l.href}
-                className="text-sm transition-colors duration-150"
-                style={{ color: 'var(--ink-muted)' }}
-                onMouseEnter={e => (e.currentTarget.style.color = 'var(--accent)')}
-                onMouseLeave={e => (e.currentTarget.style.color = 'var(--ink-muted)')}
+                className="text-sm transition-colors duration-150 text-[var(--ink-muted)] hover:text-[var(--accent)]"
               >
                 {l.label}
               </Link>
@@ -55,10 +53,7 @@ export function Footer() {
           <div className="flex flex-col gap-2.5">
             <a
               href="mailto:vishal@example.com"
-              className="text-sm transition-colors duration-150"
-              style={{ color: 'var(--ink-muted)' }}
-              onMouseEnter={e => (e.currentTarget.style.color = 'var(--accent)')}
-              onMouseLeave={e => (e.currentTarget.style.color = 'var(--ink-muted)')}
+              className="text-sm transition-colors duration-150 text-[var(--ink-muted)] hover:text-[var(--accent)]"
             >
               vishal@example.com
             </a>
@@ -66,10 +61,7 @@ export function Footer() {
               href="https://linkedin.com/in/yourprofile"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm transition-colors duration-150"
-              style={{ color: 'var(--ink-muted)' }}
-              onMouseEnter={e => (e.currentTarget.style.color = 'var(--accent)')}
-              onMouseLeave={e => (e.currentTarget.style.color = 'var(--ink-muted)')}
+              className="text-sm transition-colors duration-150 text-[var(--ink-muted)] hover:text-[var(--accent)]"
             >
               LinkedIn →
             </a>
@@ -77,10 +69,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div
-        className="border-t"
-        style={{ borderColor: 'var(--border)' }}
-      >
+      <div className="border-t" style={{ borderColor: 'var(--border)' }}>
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <p className="text-xs" style={{ color: 'var(--ink-faint)' }}>
             © {new Date().getFullYear()} Vishal
