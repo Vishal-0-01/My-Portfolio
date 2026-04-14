@@ -110,14 +110,7 @@ export default async function ToolsPage() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 text-sm font-semibold px-4 py-2 border transition-colors duration-150"
                       style={{ borderColor: 'var(--accent)', color: 'var(--accent)' }}
-                      onMouseEnter={(e) => {
-                        e.currentTarget.style.background = 'var(--accent)'
-                        e.currentTarget.style.color = '#fff'
-                      }}
-                      onMouseLeave={(e) => {
-                        e.currentTarget.style.background = 'transparent'
-                        e.currentTarget.style.color = 'var(--accent)'
-                      }}
+                      
                     >
                       Open ↗
                     </a>
@@ -126,7 +119,7 @@ export default async function ToolsPage() {
                       href={tool.link}
                       className="inline-flex items-center gap-2 text-sm font-semibold px-4 py-2 border transition-colors duration-150"
                       style={{ borderColor: 'var(--accent)', color: 'var(--accent)' }}
-                      onMouseEnter={undefined}
+                      
                     >
                       Open →
                     </Link>

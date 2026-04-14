@@ -48,9 +48,7 @@ export default async function InsightsPage() {
                 href={`/insights/${post.slug}`}
                 className="group flex flex-col md:flex-row md:items-center gap-4 md:gap-8 p-6 md:p-8 transition-colors duration-150"
                 style={{ background: 'var(--bg)' }}
-                onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = 'var(--bg-card)' }}
-                onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = 'var(--bg)' }}
-              >
+                className="group flex flex-col md:flex-row md:items-center gap-4 md:gap-8 p-6 md:p-8 transition-colors duration-150 hover:bg-[var(--bg-card)]"
                 {/* Date */}
                 <div className="shrink-0 w-28">
                   <span className="text-xs" style={{ color: 'var(--ink-faint)' }}>{date}</span>
